@@ -19,7 +19,7 @@ $age = 20;
     Меня зовут: <?= $name ?> <br>
 	Мне <?= $age ?> лет<br>
 	Тип переменной \$name: <?= gettype($name) ?> <br>
-	Тип переменной \$age: <?= gettype($name) ?> <br>	
+	Тип переменной \$age: <?= gettype($age) ?> <br>	
     </p>
 	<?php
 	/*
