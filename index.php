@@ -16,7 +16,7 @@
     <p>Выполнила: <b>Лера</b> (20 лет)</p>
     <hr>
     <ul>
-        <li><a href="lab1/phpinfo.php">1. Информация о PHP (phpinfo)</a></li>
+        <li><a href="phpinfo.php">1. Информация о PHP (phpinfo)</a></li>
         <li><a href="lab1/vars.php">2. Переменные и типы (vars.php)</a></li>
         <li><a href="lab1/if.php">3. Конструкции if-elseif-else (if.php)</a></li>
         <li><a href="lab1/switch.php">4. Конструкция switch (switch.php)</a></li>
