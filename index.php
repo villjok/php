@@ -3,7 +3,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторная работа №1 - Лера</title>
+    <title>Лабораторные работы</title>
     <style>
         body {
             font-family: Arial, sans-serif;
