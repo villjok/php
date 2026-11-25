@@ -14,6 +14,9 @@
         h1,
         h2 {
             color: #1e7a45;
+            border-bottom: 2px solid #1e7a45;
+            padding-bottom: 6px;
+            display: inline-block;
         }
 
         ul {
@@ -24,17 +27,12 @@
 
         a {
             color: #1e7a45;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <h1>Лабораторная работа №1</h1>
-    <hr>
     <ul>
         <li><a href="phpinfo.php">1. Информация о PHP (phpinfo)</a></li>
         <li><a href="lab1/vars.php">2. Переменные и типы (vars.php)</a></li>
