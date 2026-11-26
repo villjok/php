@@ -56,7 +56,7 @@
 
      <h2>Лабораторная работа №3 (Встроенные функции и макет)</h2>
     <ul>
-        <li><a href="lab3/site/index.php">1. Макет сайта школы (index.php)</a></li>
+        <li><a href="lab3/index.php">1. Макет сайта школы (index.php)</a></li>
         <li><a href="lab3/strings.php">2. Обработка строк (strings.php)</a></li>
         <li><a href="lab3/date.php">3. Дата и время (date.php)</a></li>
         <li><a href="lab3/constants.php">4. Константы PHP (constants.php)</a></li>
