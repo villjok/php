@@ -38,7 +38,7 @@ $now = time();
 $birthdayThisYear = mktime(0, 0, 0, 9, 1, (int)date('Y', $now));
 $birthday = $birthdayThisYear > $now
 	? $birthdayThisYear
-	: mktime(0, 0, 0, 9, 1, (int)date('Y', $now) + 1);
+	: mktime(0, 0, 0, 3, 14, (int)date('Y', $now) + 1);
 
 $dateInfo = getdate($now);
 $hour = $dateInfo['hours'];
