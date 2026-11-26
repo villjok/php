@@ -1,3 +1,7 @@
+<?php
+	require_once 'inc/lib.inc.php';
+	require_once 'inc/data.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,8 +13,9 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" width="130" height="80" alt="Наш логотип" class="logo">
-    <span class="slogan">приходите к нам учиться</span>
+    <!-- Верхняя часть страницы -->
+    <?php require_once 'inc/top.inc.php'; ?>
+    <!-- Верхняя часть страницы -->
   </header>
   <section>
     <h1>Калькулятор школьника</h1>
@@ -32,16 +37,17 @@
     </form>
   </section>
   <nav>
-    <h2>Навигация по сайту</h2>
-    <ul>
-      <li><a href='index.php'>Домой</a></li>
-      <li><a href='about.php'>О нас</a></li>
-      <li><a href='contact.php'>Контакты</a></li>
-      <li><a href='table.php'>Таблица умножения</a></li>
-      <li><a href='calc.php'>Калькулятор</a></li>
-    </ul>
+    <!-- Навигация -->
+    <?php require_once 'inc/menu.inc.php'; ?>
+    <!-- Навигация -->
   </nav>
   <footer>
+    <!-- Нижняя часть страницы -->
+    <?php require_once 'inc/bottom.inc.php'; ?>
+    <!-- Нижняя часть страницы -->
+  </footer>
+</body>
+</html>
     &copy; Супер Мега Веб-мастер, 2000 &ndash; 20xx
   </footer>
 </body>
