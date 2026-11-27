@@ -52,10 +52,10 @@ function getTable(int $cols = 5, int $rows = 5, string $color = 'yellow'): int
 <body>
     <h1>Таблица умножения</h1>
     <?php
-    getTable();
+    getTable(5, 5, '#8FBC8F');
     getTable(8);
     getTable(4, 6);
-    $n1 = getTable(3, 3, '#8FBC8F');
+    $total = getTable(3, 3); 
 
     echo "<p><strong>Всего вызовов функции getTable(): $n4</strong></p>";
     ?>
