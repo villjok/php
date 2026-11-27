@@ -1,50 +1,38 @@
 <?php
-header('Content-Type: text/plain; charset=UTF-8');
-$allConstants = get_defined_constants(true);
+declare(strict_types=1);
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Константы PHP</title>
+</head>
+<body>
+    <h1>Все определенные константы PHP</h1>
+    <?php
+    $allConstants = get_defined_constants(true);
 
-echo "Массив\n(\n";
-
-foreach ($allConstants as $category => $constants) {
-    echo " [" . $category . "] => Array\n (\n";
-    ksort($constants, SORT_STRING);
-
-    foreach ($constants as $name => $value) {
-        echo "  [" . $name . "] => " . formatValue($value) . "\n";
-    }
-
-    echo " )\n\n";
-}
-
-echo ")\n";
-
-function formatValue(mixed $value): string
-{
-    if ($value === null) {
-        return '';
-    }
-    if ($value === true) {
-        return '1';
-    }
-    if ($value === false) {
-        return '';
-    }
-    if (is_float($value)) {
-        if (is_nan($value)) {
-            return 'NAN';
+    foreach ($allConstants as $module => $constants) {
+        echo "<div>";
+        echo "<h2>Модуль: " . htmlspecialchars($module) . "</h2>";
+        
+        foreach ($constants as $name => $value) {
+            $displayValue = is_array($value) || is_object($value) ? print_r($value, true) : $value;
+            if (is_bool($value)) {
+                $displayValue = $value ? 'true' : 'false';
+            } elseif (is_null($value)) {
+                $displayValue = 'null';
+            } elseif (is_string($value)) {
+                $displayValue = "'" . htmlspecialchars($value) . "'";
+            }
+            
+            echo "<div>";
+            echo "<span>" . htmlspecialchars($name) . "</span> = ";
+            echo "<span>" . htmlspecialchars((string)$displayValue) . "</span>";
+            echo "</div>";
         }
-        if (is_infinite($value)) {
-            return $value > 0 ? 'INF' : '-INF';
-        }
-        return rtrim(rtrim(str_replace('.', ',', (string) $value), '0'), ',');
+        echo "</div>";
     }
-    if (is_int($value)) {
-        return (string) $value;
-    }
-    if (is_string($value)) {
-        return $value;
-    }
-    if (is_array($value)) {
-        return 'Array';
-    }
-    return (string) $value;
-}
+    ?>
+</body>
+</html>
