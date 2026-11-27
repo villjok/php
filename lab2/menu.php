@@ -2,11 +2,11 @@
 declare(strict_types=1);
 
 $leftMenu = [
-	['link' => 'Домой', 'href' => 'lab3/index.php'],
-	['link' => 'О нас', 'href' => 'lab3/about.php'],
-	['link' => 'Контакты', 'href' => 'lab3/contact.php'],
-	['link' => 'Таблица умножения', 'href' => 'table.php'],
-	['link' => 'Калькулятор', 'href' => 'lab3/calc.php'],
+	['link' => 'Домой', 'href' => '/lab3/index.php'],
+	['link' => 'О нас', 'href' => '/lab3/about.php'],
+	['link' => 'Контакты', 'href' => '/lab3/contact.php'],
+	['link' => 'Таблица умножения', 'href' => 'table.php'], 
+	['link' => 'Калькулятор', 'href' => '/lab3/calc.php'],
 ];
 ?>
 <!DOCTYPE html>
