@@ -55,7 +55,7 @@ function getTable(int $cols = 5, int $rows = 5, string $color = 'yellow'): int
     getTable();
     getTable(8);
     getTable(4, 6);
-    $n4 = getTable(3, 3, '#8FBC8F');
+    $n1 = getTable(3, 3, '#8FBC8F');
 
     echo "<p><strong>Всего вызовов функции getTable(): $n4</strong></p>";
     ?>
