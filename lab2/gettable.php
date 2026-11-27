@@ -57,7 +57,7 @@ function getTable(int $cols = 5, int $rows = 5, string $color = 'yellow'): int
     getTable(4, 6);
     $total = getTable(3, 3); 
 
-    echo "<p><strong>Всего вызовов функции getTable(): $n4</strong></p>";
+    echo "<p><strong>Всего вызовов функции getTable(): $total</strong></p>";
     ?>
 </body>
 </html>
